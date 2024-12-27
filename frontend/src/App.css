@@ -1,0 +1,356 @@
+.application {
+  background-color: #ebebeb;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.applicationContent {
+  height: 92.198vh;
+  overflow-y: auto;
+}
+
+.applicationContent::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* .arrow {
+  border: solid black; */
+/* border-width: 1px 0px 0px 1px; */
+/* border-width: 0 1px 1px 0; */
+/* display: inline-block; */
+/* padding: 2px; */
+/* } */
+
+/* .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+} */
+
+/* .down{
+  border: solid black;
+  border-width: 1px 0px 0px 1px; */
+/* display: inline-block; */
+/* padding: 2px;
+} */
+
+/* /* .ant-menu-submenu-active .ant-menu-submenu-title .ant-menu-title-content .arrow{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+} 
+
+.ant-menu-submenu-active .ant-menu-submenu-title .ant-menu-title-content .arrow{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+} */
+
+
+.header-menu .ant-menu-item::after {
+  border: none !important;
+}
+
+
+
+.ant-menu-title-content .ant-input-outlined {
+  border: 0Px;
+  height: 4.5vh;
+}
+
+.dashboard .ant-menu-horizontal {
+  line-height: 35px;
+  padding: 10px 0px 10px 0px;
+}
+
+.dashboard {
+  margin-top: 5px;
+  padding: 0px 10px 0px 10px;
+}
+
+.dashboardMenu {
+  display: flex;
+  justify-content: center;
+}
+
+
+.dashboardMenu>.ant-menu-overflow-item {
+  padding: 0 6% 0 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bestOfEletronics {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+}
+
+
+.whishlistChooser {
+  transform: translate(15.5vw, -29vh);
+}
+
+
+.productHeartIcon {
+  transform: translate(27vw, -48vh);
+}
+
+
+
+.homeProductCard .ant-card-body {
+  padding-top: 2px;
+}
+
+.ProductsearchCard .ant-card-body {
+  transform: translateY(-35px);
+}
+
+
+
+
+
+.topStories {
+  margin: 5px 10px 0px 10px;
+  color: rgb(101, 101, 101);
+}
+
+
+.brandDirectory {
+  font-weight: 600;
+  font-size: larger;
+  margin-bottom: 15px;
+}
+
+.brandDirectoryTitle {
+  color: rgb(77, 77, 77) !important;
+  font-size: 15px;
+}
+
+.brandDirectoryContent {
+  color: inherit;
+  margin-bottom: 5px;
+  box-sizing: content-box !important;
+  font-size: small;
+}
+
+.oneStopDestination {
+  margin: 5px 10px 0px 10px;
+  color: rgb(192, 69, 69);
+}
+
+
+
+.oneStopTitle {
+  color: rgb(150, 149, 149);
+  font-size: larger;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.oneStopContent {
+  color: rgb(150, 149, 149);
+  font-size: small;
+  margin-bottom: 7px;
+}
+
+.searchingProduct {
+  background-color: #ebebeb;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.productSearch .ant-menu-item .ant-menu-title-content,
+.productSearch .ant-menu-submenu .ant-menu-submenu-title .ant-menu-title-content {
+  color: white;
+}
+
+.searchedProduct {
+  padding: 0px 10px 0px 50px;
+  margin-top: 20px;
+}
+
+.productDisplaying {
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.productInfo {
+  background-color: #ebebeb;
+  min-height: 87.3vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.productDetails {
+  margin: 5px 7% 0 7%;
+  background-color: white;
+  min-height: 86.03vh;
+  padding: 10px 10px 0 10px;
+}
+
+.productImage {
+  width: 30vw;
+  height: 50vh;
+  border: 1px solid rgba(128, 128, 128, 0.108);
+  border-radius: 10px;
+}
+
+
+.productName,
+.productPrice,
+.productOffers,
+.productOffer1 {
+  margin: 10px 0px 20px 0px;
+
+}
+
+.offerIcon {
+  margin-right: 10px;
+}
+
+
+.offerName {
+  font-weight: 500;
+  padding-right: 5px;
+}
+
+
+.cartDetails,
+.paymentPage {
+  background-color: #ebebeb;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.cartContent {
+  margin-top: 20px;
+}
+
+.cartPincode {
+  border: 1px solid rgba(128, 128, 128, 0.102);
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+}
+
+.cartInfo {
+  border: 1px solid rgba(128, 128, 128, 0.102);
+  padding: 10px;
+  background-color: white;
+}
+
+
+.paymentSummary {
+  margin: 20px 7% 0 7%;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.344);
+}
+
+.paymentSummaryContent {
+  background-color: rgba(100, 148, 237, 0.147);
+}
+
+.sellerContent {
+  margin: 5px 10px 0px 10px;
+  color: rgb(101, 101, 101);
+  overflow-y: auto;
+  height: 89vh;
+  background-color: #ebebeb;
+}
+
+.sellerContent::-webkit-scrollbar {
+  display: none;
+}
+
+.sellerContentTitle {
+  color: rgb(77, 77, 77) !important;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+
+.sellerContentInfo {
+  color: rgb(101, 101, 101) !important;
+  margin-bottom: 5px;
+  box-sizing: content-box !important;
+  font-size: small;
+  padding-left: 30px;
+}
+
+
+.footer {
+  background-color: black;
+  margin: 5px 0px 0px 0px;
+}
+
+.footerTitle {
+  color: grey;
+  font-size: 12px !important;
+
+}
+
+.footerContent {
+  color: whitesmoke !important;
+  font-weight: 600;
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle !important;
+  font-size: 12px !important;
+}
+
+.leftFooterContent {
+  border-right: 1px solid grey;
+}
+
+.footerLogoContent {
+  margin-right: 10px;
+
+}
+
+.footerInfo {
+  border-bottom: 1px solid grey;
+  padding: 20px 30px 20px 30px;
+}
+
+.footerIcon {
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+.corosoalImage {
+  color: '#fff';
+  text-align: 'center';
+  background-color: '#364d79';
+}
+
+.cartOptions {
+  color: "black";
+  font-weight: 600;
+  font-size: 16
+}
+.cartOptions:hover{
+cursor: pointer;
+}
