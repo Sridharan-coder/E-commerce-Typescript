@@ -25,7 +25,7 @@ nodemailer.createTestAccount((err:any, account:any) => {
         secure: true,
         auth: {
             user: "sridharan.r@mitrahsoft.com",
-            pass: "yaoc roqr wcoe hiex",
+            pass: process.env.Mail_Passkey,
         },
     });
 
@@ -57,7 +57,7 @@ const transporter = nodemailer.createTransport({
     secure: true,
     auth: {
         user: "sridharan.r@mitrahsoft.com",
-        pass: "yaoc roqr wcoe hiex",
+        pass: process.env.Mail_Passkey,
     },
 });
 
