@@ -89,9 +89,7 @@ const BestOfGrocery = () => {
                                             <img
                                                 src={item.p_image}
                                                 alt={item.p_name}
-                                                width={210}
-                                                height={210}
-                                                className="cardImage"
+                                                className="cardImage1"
                                             />
                                         }
                                         bordered={false}
