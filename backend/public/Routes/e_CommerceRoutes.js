@@ -1,0 +1,28 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = void 0;
+const express_1 = __importDefault(require("express"));
+const e_CommerceController_1 = require("../Controllers/e_CommerceController");
+const mailSender_1 = require("../Controllers/mailSender");
+const upload_1 = require("../utils/upload");
+exports.router = express_1.default.Router();
+exports.router.get("/sellerDetails/:s_id", e_CommerceController_1.getSeller);
+exports.router.get("/getUserDetals/:u_id", e_CommerceController_1.getUser);
+exports.router.get("/getProductById/:p_id", e_CommerceController_1.getProductById);
+exports.router.get("/getProductByType/:p_type", e_CommerceController_1.getProductByType);
+exports.router.post("/createSeller", e_CommerceController_1.addSeller);
+exports.router.post("/addProduct", upload_1.upload, e_CommerceController_1.addProducts);
+exports.router.post("/createUser", e_CommerceController_1.addUser);
+exports.router.put("/updateSeller/:s_id", e_CommerceController_1.updateSeller);
+exports.router.put("/updateUser/:u_id", e_CommerceController_1.updateUser);
+exports.router.put("/updateProduct/:p_id", e_CommerceController_1.updateProduct);
+exports.router.delete("/deleteSeller/:s_id", e_CommerceController_1.deleteSeller);
+exports.router.delete("/deleteUser/:u_id", e_CommerceController_1.deleteUser);
+exports.router.delete("/deleteProduct/:p_id", e_CommerceController_1.deleteProduct);
+exports.router.post("/sellerLogin", e_CommerceController_1.sellerLogin);
+exports.router.post("/userLogin", e_CommerceController_1.userLogin);
+exports.router.post("/sendEmail", mailSender_1.SendingTheMail);
+module.exports = { router: exports.router };

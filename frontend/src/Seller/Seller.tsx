@@ -227,6 +227,7 @@ const Seller = () => {
         setIsLoginOpen(false);
         navigate("/seller");
         setSellerInfo({ ...response.data.seller, s_loggedIn: true });
+        // sessionStorage.setItem("token",response.data.token)
       })
       .catch((error) => {
         console.error(error.response.data.message);
@@ -254,7 +255,7 @@ const Seller = () => {
   };
   console.log(imageFile)
   const onAddProduct = (values: any) => {
-
+    console.log(values)
     if (sellerInfo.s_loggedIn) {
       const formData = new FormData();
       formData.append("file", imageFile as never);

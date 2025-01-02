@@ -93,9 +93,9 @@ const ProductSearch = () => {
 
   const navigate = useNavigate();
   const param = useParams();
-  const type:String = param.p_type as String;
+  const type: String = param.p_type as String;
 
-  const [buyerInfo, setBuyerInfo] = useState<UserInfo>(useSelector((item:StoringDetail) => item.buyerAuthentication as UserInfo))
+  const [buyerInfo, setBuyerInfo] = useState<UserInfo>(useSelector((item: StoringDetail) => item.buyerAuthentication as UserInfo))
   const [isRegisterOpen, setIsRegisterOpen] = useState(false)
 
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -211,7 +211,7 @@ const ProductSearch = () => {
     },
     {
       key: "cart",
-      icon: <span style={{position:"relative"}}><PiShoppingCart size={20} color="white" /> <span style={{ color: "red", position: "absolute", paddingLeft: 7, paddingBottom: 10, fontWeight: 700 }} id="cardCount">{buyerInfo.u_carts.length ? buyerInfo.u_carts.length : ""} </span></span>,
+      icon: <span style={{ position: "relative" }}><PiShoppingCart size={20} color="white" /> <span style={{ color: "red", position: "absolute", paddingLeft: 7, paddingBottom: 10, fontWeight: 700 }} id="cardCount">{buyerInfo.u_carts.length ? buyerInfo.u_carts.length : ""} </span></span>,
       label: (
         <>
           Cart
@@ -230,7 +230,7 @@ const ProductSearch = () => {
       key: "logo",
       label: (
         <a href="/#" rel="noopener noreferrer">
-          
+
           <img
             alt="logo"
             srcSet={Flipkart_logo_white}
@@ -287,7 +287,7 @@ const ProductSearch = () => {
     },
     {
       key: "cart",
-      icon: <span style={{ position:"relative"}}><PiShoppingCart size={20} color="white" /> <span style={{ color: "red", position: "absolute", paddingLeft: 7, paddingBottom: 10, fontWeight: 700 }} id="cardCount">{buyerInfo.u_carts.length ? buyerInfo.u_carts.length : ""} </span></span>,
+      icon: <span style={{ position: "relative" }}><PiShoppingCart size={20} color="white" /> <span style={{ color: "red", position: "absolute", paddingLeft: 7, paddingBottom: 10, fontWeight: 700 }} id="cardCount">{buyerInfo.u_carts.length ? buyerInfo.u_carts.length : ""} </span></span>,
       label: (
         <>
           Cart
@@ -324,7 +324,7 @@ const ProductSearch = () => {
     },
   ];
 
-  const onClick = (e:OptionInfo) => {
+  const onClick = (e: OptionInfo) => {
     if (e.key === "becomeSeller") {
       navigate("/seller");
     }
@@ -362,7 +362,7 @@ const ProductSearch = () => {
     form.resetFields();
   };
 
-  const onLogin = async (values:LoginInfo) => {
+  const onLogin = async (values: LoginInfo) => {
 
     await axios
       .post(`http://localhost:3321/userLogin`, values, {
@@ -383,7 +383,7 @@ const ProductSearch = () => {
       });
   };
 
-  const onRegister = async (values:RegisterInfo) => {
+  const onRegister = async (values: RegisterInfo) => {
 
     await axios
       .post("http://localhost:3321/createSeller", values, {
@@ -403,11 +403,11 @@ const ProductSearch = () => {
   };
 
 
-  const onSearch = (e:OptionInfo) => {
+  const onSearch = (e: OptionInfo) => {
     navigate(`/product/${e.key}`);
   };
 
-  const handleProduct = (productData:productInfo) => {
+  const handleProduct = (productData: productInfo) => {
     navigate(`/item/${type}?name=${productData.p_name}&id=${productData.p_id}`);
   };
 
@@ -477,7 +477,7 @@ const ProductSearch = () => {
         <Row>
           <Col span={24} key="Productss">
             <Space wrap size={[25, 31]}>
-              {products.map((item:productInfo) => (
+              {products.map((item: productInfo) => (
                 <>
                   <Card
                     key={item.p_id}
@@ -492,8 +492,7 @@ const ProductSearch = () => {
                       <><img
                         src={item.p_image}
                         alt={item.p_name}
-                        width={280}
-                        height={280}
+                        height={250}
                         className="cardImage"
                       />
                       </>

@@ -286,6 +286,7 @@ function Home() {
             form.resetFields();
         }
         else if (e.key === "logout") {
+            sessionStorage.removeItem("token");
             dispatch(logoutBuyerDetails());
             setBuyerInfo({
                 u_id: "",
@@ -329,6 +330,7 @@ function Home() {
                 setBuyerInfo({ ...response.data.user, u_loggedIn: true });
                 setIsLoginOpen(false);
                 navigate("/");
+                sessionStorage.setItem("token", response.data.token)
             })
             .catch((error) => {
                 console.error(error.response.data.message);
@@ -374,8 +376,6 @@ function Home() {
         updateData()
     // eslint-disable-next-line 
     }, [])
-
-
 
     return (
         <div className="application">
