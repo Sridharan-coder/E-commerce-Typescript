@@ -46,8 +46,8 @@ app.use("/", e_commerceRouter);
 
 app.use("/uploads", express.static(path.join(__dirname,"..","uploads")));
 
-Cashfree.XClientId = "TEST10385036e2be6a1b7a431ec0203263058301";
-Cashfree.XClientSecret = "cfsk_ma_test_345db7892a73e45121419c01aadb577e_51dad5bf"
+Cashfree.XClientId = process.env.CLIENT_ID;
+Cashfree.XClientSecret = process.env.CLIENT_SECRET;
 Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
 
 function generateOrderId() {
